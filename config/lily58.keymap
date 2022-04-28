@@ -7,17 +7,29 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+// Layer aliases
 #define DEFAULT 0
 #define SYMS 1
 #define BTLYR 2
 #define MSE 3
 #define EMPTY 4
 
+// Define our mod-tap behaviour
 &mt {
+	flavor = "hold-preferred";
+	tapping-term-ms = <150>;
+};
+
+// Define our layer-tap behaviour
+&lt {
+    flavor = "balanced";
     tapping-term-ms = <150>;
 };
+
+// Keymaps!
 / {
 	keymap {
 		compatible = "zmk,keymap";
