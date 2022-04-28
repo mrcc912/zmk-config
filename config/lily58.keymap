@@ -28,7 +28,6 @@
     flavor = "balanced";
     tapping-term-ms = <150>;
 };
-
 // Keymaps!
 / {
 	keymap {
