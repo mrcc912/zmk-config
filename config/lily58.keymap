@@ -14,6 +14,10 @@
 #define BTLYR 2
 #define MSE 3
 #define EMPTY 4
+
+&mt {
+    tapping-term-ms = <150>;
+};
 / {
 	keymap {
 		compatible = "zmk,keymap";
