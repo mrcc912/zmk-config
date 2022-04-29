@@ -19,7 +19,7 @@
 
 // Define our mod-tap behaviour
 &mt {
-	flavor = "hold-preferred";
+	flavor = "tap-preferred";
 	tapping-term-ms = <300>;
 };
 
