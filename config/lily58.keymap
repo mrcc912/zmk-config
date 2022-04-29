@@ -20,13 +20,13 @@
 // Define our mod-tap behaviour
 &mt {
 	flavor = "hold-preferred";
-	tapping-term-ms = <250>;
+	tapping-term-ms = <300>;
 };
 
 // Define our layer-tap behaviour
 &lt {
     flavor = "balanced";
-    tapping-term-ms = <250>;
+    tapping-term-ms = <300>;
 };
 // Keymaps!
 / {
