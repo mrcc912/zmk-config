@@ -15,7 +15,7 @@
 #define BTLYR 2
 #define MSE 3
 #define DEFAULT_HOMEROW 4
-#define EMPTY 5
+//#define EMPTY 5
 
 // Define our mod-tap behaviour
 
