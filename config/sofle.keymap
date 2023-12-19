@@ -21,7 +21,9 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <300>;
+    tapping-term-ms = <220>;
+    retro-tap;
+    quick-tap-ms = <50>;
 };
 
 // Define our layer-tap behaviour
