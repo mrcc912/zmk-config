@@ -62,13 +62,13 @@
                 <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
-        homerow_GACS {
+        homerow_CAGS {
             bindings = <
-&tdhrm     &kp N1      &kp N2             &kp N3       &kp N4        &kp N5                              &kp N6    &kp N7        &kp N8       &kp N9      &kp N0         &kp MINUS
-&kp TAB    &kp Q       &kp W              &kp E        &kp R         &kp T                               &kp Y     &kp U         &kp I        &kp O       &kp P          &kp BSPC
-&kp LCTRL  &mt LGUI A  &mt LALT S         &mt LCTRL D  &mt LSHIFT F  &kp G                               &kp H     &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMI  &kp RET
-&kp LSHFT  &kp Z       &kp X              &kp C        &kp V         &kp B     &kp C_MUTE   &kp C_PP     &kp N     &kp M         &kp COMMA    &kp DOT     &kp SLASH      &kp SQT
-                       &kp LS(LA(LCTRL))  &kp LCTRL    &kp LEFT_ALT  &kp LGUI  &lt 2 SPACE  &lt 4 SPACE  &kp RALT  &kp BSPC      &kp LBKT     &kp RBKT
+&tdhrm     &kp N1       &kp N2             &kp N3          &kp N4        &kp N5                              &kp N6    &kp N7        &kp N8           &kp N9      &kp N0          &kp MINUS
+&kp TAB    &kp Q        &kp W              &kp E           &kp R         &kp T                               &kp Y     &kp U         &kp I            &kp O       &kp P           &kp BSPC
+&kp LCTRL  &mt LCTRL A  &mt LALT S         &mt LEFT_GUI D  &mt LSHIFT F  &kp G                               &kp H     &mt RSHIFT J  &mt RIGHT_GUI K  &mt RALT L  &mt RCTRL SEMI  &kp RET
+&kp LSHFT  &kp Z        &kp X              &kp C           &kp V         &kp B     &kp C_MUTE   &kp C_PP     &kp N     &kp M         &kp COMMA        &kp DOT     &kp SLASH       &kp SQT
+                        &kp LS(LA(LCTRL))  &kp LCTRL       &kp LEFT_ALT  &kp LGUI  &lt 2 SPACE  &lt 4 SPACE  &kp RALT  &kp BSPC      &kp LBKT         &kp RBKT
             >;
 
             sensor-bindings =
