@@ -13,15 +13,43 @@
 #define DEFAULT 0
 #define SYMBOL 1
 
-&lt { quick_tap_ms = <220>; };
-&mt { quick_tap_ms = <220>; };
+&lt {
+	quick_tap_ms = <220>;
+};
+
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <220>;
+    retro-tap;
+    quick-tap-ms = <50>;
+};
 
 / {
     macros {
     };
 };
+
+// Keymaps!
 / {
-        keymap {
+    behaviors {
+        tdhrm: tdhrm {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDHRM";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&tog 1>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 14>;
+        };
+    };
+
+	keymap {
                 compatible = "zmk,keymap";
                 default_layer {
 // --------------------------------------------------------------
