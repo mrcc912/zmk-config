@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define DEFAULT 0
@@ -68,15 +69,30 @@
 &trans      &kp CARET    &kp HASH         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK    &kp SLASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans         &trans
                                           &trans                &trans                 &trans          &trans         &trans        &kp N0
             >;
+
+            label = "sym";
         };
 
         NAVIGATION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp C_MUTE    &kp K_PLAY_PAUSE  &trans    &trans        &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans            &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans            &trans    &trans        &trans    &trans     &trans
-                        &trans  &trans  &trans        &trans            &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &kp C_MUTE      &kp C_PP         &trans    &trans        &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &kp C_PREV      &kp C_NEXT       &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &kp C_VOL_DN    &kp C_VOLUME_UP  &trans    &trans        &trans    &trans     &trans
+                        &trans  &trans  &mo 3           &trans           &trans    &trans
             >;
+
+            label = "nav";
+        };
+
+        SYSTEM {
+            bindings = <
+&bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &bootloader
+&bt BT_NXT   &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_PRV   &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                         &trans        &trans        &trans          &trans  &trans  &trans
+            >;
+
+            label = "sys";
         };
     };
 };
