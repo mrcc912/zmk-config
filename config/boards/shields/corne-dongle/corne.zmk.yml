@@ -4,8 +4,11 @@ name: Corne Dongle
 type: shield
 #url: https://github.com/benvallack/zmk-config-enki42
 url: https://github.com/zmkfirmware/zmk
-requires: [pro_micro]
-exposes: [i2c_oled]
+requires:
+  - pro_micro
+  - seeeduino_xiao_ble
+exposes:
+  - i2c_oled
 features:
   - keys
 siblings:
