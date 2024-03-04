@@ -94,12 +94,12 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <240>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <100>;
         };
 
         lh_pht: left_positional_hold_tap {
