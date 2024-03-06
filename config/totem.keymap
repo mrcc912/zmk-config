@@ -138,7 +138,7 @@
         lesm: lt_enter_space_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "LT_ENTER_SPACE_MORPH";
-            bindings = <&lt 1 KP_ENTER>, <&lt 1 SPACE>;
+            bindings = <&lt 1 RETURN>, <&lt 1 SPACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_RCTL)>;
@@ -170,10 +170,10 @@
 
         base {
             bindings = <
-                &qgt         &kp W       &kp E       &kp R               &kp T          &kp Y  &kp U                &kp I       &kp O           &kp P
-                &hm LCTRL A  &hm LALT S  &hm LGUI D  &hm LSHFT F         &kp G          &kp H  &hm RSHFT J          &hm RGUI K  &hm LEFT_ALT L  &hm RCTRL SEMICOLON
-&mt LSHIFT TAB  &kp Z        &kp X       &kp C       &kp V               &kp B          &kp N  &kp M                &kp COMMA   &kp PERIOD      &kp SLASH            &mt RIGHT_SHIFT ENTER
-                                         &kp LCTRL   &mt LGUI BACKSPACE  &lt 2 SPACE    &lesm  &mt RCTRL BACKSPACE  &kp LALT
+            &kp Q        &kp W       &kp E       &kp R          &kp T          &kp Y  &kp U          &kp I       &kp O           &kp P
+            &hm LCTRL A  &hm LALT S  &hm LGUI D  &hm LSHFT F    &kp G          &kp H  &hm RSHFT J    &hm RGUI K  &hm LEFT_ALT L  &hm RCTRL SEMICOLON
+&kp LSHIFT  &kp Z        &kp X       &kp C       &kp V          &kp B          &kp N  &kp M          &kp COMMA   &kp PERIOD      &kp SLASH            &mt RIGHT_SHIFT ENTER
+                                     &kp LCTRL   &kp BACKSPACE  &lt 2 SPACE    &lesm  &kp BACKSPACE  &kp LALT
             >;
         };
 
