@@ -39,46 +39,40 @@
             bindings = <&kp ESC>;
         };
 
-        thumbs_alt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <33 36>;
-            layers = <0>;
-        };
-
-        thumbs_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <34 35>;
-            layers = <0>;
-        };
-
         lbracecombo {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <2 3>;
+            timeout-ms = <40>;
         };
 
         lparcombo {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <12 13>;
+            timeout-ms = <40>;
         };
 
         lbracketcombo {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <23 24>;
+            timeout-ms = <40>;
         };
 
         rbracecombo {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <6 7>;
+            timeout-ms = <40>;
         };
 
         rparcombo {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <17 16>;
+            timeout-ms = <40>;
         };
 
         rbracketcombo {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <27 28>;
+            timeout-ms = <40>;
         };
 
         oneshot_mirror {
