@@ -98,7 +98,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <25>;
         };
 
         lh_pht: left_positional_hold_tap {
