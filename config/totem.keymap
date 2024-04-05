@@ -87,6 +87,16 @@
             bindings = <&caps_word>;
             key-positions = <13 16>;
         };
+
+        Lessthancombo {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <24 25>;
+        };
+
+        greaterthancombo {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <26 27>;
+        };
     };
 
     behaviors {
