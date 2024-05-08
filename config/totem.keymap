@@ -231,8 +231,8 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp GRAVE   &kp EXCLAMATION  &kp PERCENT   &kp DOUBLE_QUOTES  &kp PIPE    &kp AMPERSAND  &kp KP_N7        &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL
-       &kp DOLLAR  &kp AT_SIGN      &kp QUESTION  &kp EQUAL          &kp PLUS    &kp MINUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SQT
+       &kp GRAVE   &kp AT           &kp PERCENT   &kp DOUBLE_QUOTES  &kp PIPE    &kp AMPERSAND  &kp KP_N7        &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL
+       &kp DOLLAR  &kp EXCLAMATION  &kp QUESTION  &kp EQUAL          &kp PLUS    &kp MINUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SQT
 &sl 4  &kp CARET   &kp HASH         &kp DOLLAR    &kp UNDERSCORE     &kp STAR    &kp SLASH      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BSLH      &kp RSHIFT
                                     &trans        &trans             &trans      &kp TAB        &kp GRAVE        &kp KP_NUMBER_0
             >;
