@@ -267,10 +267,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &bt BT_SEL 0    &bt BT_SEL 1  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &trans        &trans  &trans          &trans        &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &bt BT_PRV  &trans        &trans  &trans          &trans        &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans  &trans          &trans        &trans  &trans
+       &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &bt BT_SEL 0    &bt BT_SEL 1  &kp F7  &kp F8  &kp F9  &kp F12
+       &bootloader  &bt BT_NXT  &trans        &trans  &trans          &trans        &kp F4  &kp F5  &kp F6  &kp F11
+&to 6  &trans       &bt BT_PRV  &trans        &trans  &trans          &trans        &kp F1  &kp F2  &kp F3  &kp F10  &to 0
+                                &trans        &trans  &trans          &trans        &trans  &trans
             >;
         };
 
@@ -290,6 +290,15 @@
        &kp DOLLAR  &kp AT_SIGN      &kp LEFT_PARENTHESIS  &kp EQUAL          &kp PLUS    &kp MINUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SQT
 &sl 4  &kp CARET   &kp HASH         &kp LEFT_BRACKET      &kp UNDERSCORE     &kp STAR    &kp SLASH      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BSLH      &kp RSHIFT
                                     &trans                &trans             &trans      &kp TAB        &kp GRAVE        &kp KP_NUMBER_0
+            >;
+        };
+
+        colemak-dh {
+            bindings = <
+            &kp Q               &kp W               &kp F            &kp P               &kp B          &kp J  &kp L              &kp U            &kp Y               &kp SEMICOLON
+            &lh_pht LEFT_GUI A  &lh_pht LEFT_ALT R  &lh_pht LCTRL S  &hm_shift LSHIFT T  &kp G          &kp M  &hm_shift RSHFT N  &rh_pht RCTRL E  &rh_pht LEFT_ALT I  &rh_pht LGUI O
+&kp LSHIFT  &kp X               &kp C               &kp D            &kp V               &kp Z          &kp K  &kp H              &kp COMMA        &kp PERIOD          &kp SLASH       &mt RIGHT_SHIFT ENTER
+                                                    &kp LCTRL        &kp BACKSPACE       &lt 2 SPACE    &lesm  &kp BACKSPACE      &kp LALT
             >;
         };
 
