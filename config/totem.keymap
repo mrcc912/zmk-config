@@ -131,7 +131,7 @@
 
             label = "LH_PHT";
             hold-trigger-key-positions = <5 6 7 8 9 9 15 16 18 19 26 27 28 29 30 31 36 37 17 35 36 13 12 11 10>;    // <---[[right-hand keys]]
-            require-prior-idle-ms = <75>;
+            require-prior-idle-ms = <100>;
             hold-trigger-on-release;
         };
 
@@ -145,18 +145,8 @@
 
             label = "RH_PHT";
             hold-trigger-key-positions = <16 17 18 19 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 32 33 34>;
-            require-prior-idle-ms = <75>;
+            require-prior-idle-ms = <100>;
             hold-trigger-on-release;
-        };
-
-        qgt: qgt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "q_to_gui_tab";
-            bindings = <&kp Q>, <&kp TAB>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI|MOD_RGUI)>;
-            keep-mods = <(MOD_LGUI|MOD_RGUI)>;
         };
 
         lesm: lt_enter_space_morph {
