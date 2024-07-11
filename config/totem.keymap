@@ -293,6 +293,15 @@
             >;
         };
 
+        right_mirrored_on_left_colemak {
+            bindings = <
+        &kp SEMICOLON  &kp Y           &kp U       &kp L        &kp J     &trans  &trans  &trans  &trans  &trans
+        &hm LCTRL O    &hm LEFT_ALT I  &hm LGUI E  &hm LSHFT N  &kp M     &trans  &trans  &trans  &trans  &trans
+&trans  &kp FSLH       &kp DOT         &kp COMMA   &kp H        &kp K     &trans  &trans  &trans  &trans  &trans  &trans
+                                       &trans      &trans       &trans    &trans  &trans  &trans
+            >;
+        };
+
         symbol_layer_numbers {
             label = "SYM_NUM";
             bindings = <
